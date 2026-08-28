@@ -18,8 +18,8 @@ module.exports = {
 
 	langs: {
 	fr: {
-			notInGroup: "❌ Cette commande ne marche que dans un groupe.",
-			result: `✧ ▬▭▬ ▬▭▬ ✦✧✦ ▬▭▬ ▬▭▬ ✦
+			notInGroup: "🍓 Cette commande ne marche que dans un groupe.",
+			result: `ᎷᎯᎠᎯᎷᎬ ᎯᏕᎻ°🫀🪽
 📌 𝗜𝗡𝗙𝗢𝗦 𝗗𝗨 𝗚𝗥𝗢𝗨𝗣𝗘
 
 🏷️ 𝗡𝗼𝗺 : %1
@@ -29,11 +29,11 @@ module.exports = {
 
 💡 𝗖𝗼𝗽𝗶𝗲𝘇 𝗹'𝗜𝗗 𝗽𝗼𝘂𝗿 𝗹𝗲 𝗰𝗼𝗹𝗲𝗿 𝗱𝗮𝗻𝘀 𝗹𝗲𝘀 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝗲𝘀
 ✧ ▬▭▬ ▬▭▬ ✦✧✦ ▬▭▬ ▬▭▬ ✦
-👨‍💻 𝘊𝘳𝘦́𝘦 𝘱𝘢𝘳 : Rayd`
+https://www.facebook.com/s64.ash`
 	},
 	en: {
-			notInGroup: "❌ This command only works in a group.",
-			result: `✧ ▬▭▬ ▬▭▬ ✦✧✦ ▬▭▬ ▬▭▬ ✦
+			notInGroup: "🍓 This command only works in a group.",
+			result: `ᎷᎯᎠᎯᎷᎬ ᎯᏕᎻ°🫀🪽
 📌 𝗚𝗥𝗢𝗨𝗣 𝗜𝗡𝗙𝗢
 
 🏷️ 𝗡𝗮𝗺𝗲 : %1
@@ -43,7 +43,7 @@ module.exports = {
 
 💡 𝗖𝗼𝗽𝘆 𝘁𝗵𝗲 𝗜𝗗 𝘁𝗼 𝘂𝘀𝗲 𝗶𝗻 𝗰𝗼𝗺𝗮𝗻𝗱𝘀
 ✧ ▬▭▬ ▬▭▬ ✦✧✦ ▬▭▬ ▬▭▬ ✦
-👨‍💻 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘣𝘺 : Rayd`
+https://www.facebook.com/s64.ash`
 	}
 	},
 
@@ -63,7 +63,7 @@ module.exports = {
 			return message.reply(getLang("result", threadName, threadID, memberCount, link));
 		} catch (err) {
 			console.error(err);
-			return message.reply("❌ Can't get group info.");
+			return message.reply("🌚 Can't get group info.");
 		}
 	}
 };
