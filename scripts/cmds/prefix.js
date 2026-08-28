@@ -6,13 +6,13 @@ module.exports = {
   config: {
     name: "prefix",
     version: "2.2.2",
-    author: "ash",
+    author: "dx",
     role: 0, // 0 = Accessible à TOUS les utilisateurs
     hasPrefix: true, // IMPORTANT: pour que le bot écoute même sans prefix
     countDown: 3,
     description: {
-      fr: "🌹 Voir et modifier le prefix Global ou du groupe",
-      en: "🌹 View and change Global or Chat prefix"
+      fr: "🍓 Voir et modifier le prefix Global ou du groupe",
+      en: "🍓 View and change Global or Chat prefix"
     },
     category: "System",
     guide: {
@@ -73,7 +73,7 @@ module.exports = {
     // VOIR LES 2 PREFIX (AFFICHER L'IMAGE)
     const { imgPath } = await generatePrefixCanvas(globalPrefix, chatPrefix, "view");
     return message.reply({
-      body: `🌹 Rayd Prefix System 🌹\n\nGlobal: ${globalPrefix}\nThis Chat: ${chatPrefix}\n\n${chatPrefix}prefix <nouveau> = changer pour ce groupe\n${globalPrefix}prefix global <nouveau> = changer le prefix global`,
+      body: `➤『 ᎡᏆ𝄞ᎻᎪᏁᏁᎪ🍓 』☜ヅ\n\nGlobal: ${globalPrefix}\nThis Chat: ${chatPrefix}\n\n${chatPrefix}prefix <nouveau> = changer pour ce groupe\n${globalPrefix}prefix global <nouveau> = changer le prefix global`,
       attachment: fs.createReadStream(imgPath)
     }).finally(() => setTimeout(() => fs.unlinkSync(imgPath), 15000));
   }
@@ -102,7 +102,7 @@ async function generatePrefixCanvas(globalP, chatP, type) {
   ctx.fillStyle = "#FFFFFF";
   ctx.shadowColor = "rgba(100,150,255,0.3)";
   ctx.shadowBlur = 20;
-  ctx.fillText("🌹 PREFIX MANAGER 🌹", width/2, 80);
+  ctx.fillText("➤『 ᎡᏆ𝄞ᎻᎪᏁᏁᎪ🍓 』☜ヅ", width/2, 80);
   ctx.shadowBlur = 0;
 
   ctx.fillStyle = "rgba(30, 35, 60, 0.55)";
@@ -179,4 +179,5 @@ function roundRect(ctx, x, y, width, height, radius) {
   ctx.lineTo(x, y + radius.tl);
   ctx.quadraticCurveTo(x, y, x + radius.tl, y);
   ctx.closePath();
-}
+		}
+	
